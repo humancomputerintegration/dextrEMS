@@ -51,15 +51,14 @@ ems_intensity_flex = 7#8
 ems_intensity_ext  = 8#9
 
 # Targets
-# target_arr = [0, 8, 17, 23, 33, 45, 60, 73] # In degrees, contrained by ratchet resolution
-target_arr = [0, 9, 15, 21, 30, 36, 44, 52]
+target_arr = [0, 8, 17, 23, 33, 45, 60, 73] # In degrees, contrained by ratchet resolution
 target_index = 5 # Choose target angle
 # brake_offset = 0
 
 # PID coefficients - PID condition
-PID_P        = 10 # oscillation @ 36
-PID_I        = 0.01 #0.5
-PID_D        = 1#2.5#0.75#0.25 #0.1
+PID_P        = 10 
+PID_I        = 0.01 
+PID_D        = 1
 PID_maxOut   = 450 # clamp max pulse width
 PID_minOut   = 100 # clamp min pulse width
 PID_frequency= 1000  # in Hz, how fast main loop refreshes
@@ -69,9 +68,9 @@ error_margin = 2    # if position is within error margin, consider target reache
 # PID with exo: 2, 0.25, 1.25
 
 # PID coefficients - EXO condition
-# PID_EXO_P        = 4 # oscillation @ 36
-# PID_EXO_I        = 0.01 #0.5
-# PID_EXO_D        = 1#3#.5 #0.1
+# PID_EXO_P        = 4 
+# PID_EXO_I        = 0.01 
+# PID_EXO_D        = 1
 # PID_EXO_maxOut   = 450 # clamp max pulse width
 # PID_EXO_minOut   = 100#100 # clamp min pulse width
 # PID_EXO_frequency= 30  # in Hz, how fast main loop refreshes
@@ -87,7 +86,7 @@ PID_EXO_FLEX_profiles =[[ 4, 0.01, 1,  100,    450,    50,    0,    0], # target
                         [ 3, 0.01, 1,  100,    450,    30,    0,    0], # target = 60
                         [ 1, 0.01, 1,  100,    450,    30,    0,    0]] # target = 73 not considered for flex
 
-#                     P    I   D  minOut  maxOut  freq    br_off err_marg
+#                         P    I   D  minOut  maxOut  freq  br_off err_marg
 PID_EXO_EXT_profiles = [[ 18, 0.01, 1,  200,    450,    50,    0,    5], # target = 0 
                         [ 18, 0.01, 1,  270,    450,    50,    0,    1], # target = 8
                         [ 20, 0.01, 1,  270,    450,    50,    0,    1], # target = 17

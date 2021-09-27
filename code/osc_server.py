@@ -23,14 +23,8 @@ ble = True
 
 # BLE device settings
 # ======================================================= #
-# BLE_MAC_ADDR =   "FE:94:A9:74:E8:08" # exo nail v1.1
-# BLE_IDENTIFIER = "597FEEEC-7BB5-4B59-BB71-AC61EAD2C44E" # exo nail v1.1
-# BLE_MAC_ADDR =   "FA-C2-52-57-91-69" # ets
-# BLE_IDENTIFIER = "B4E53E3E-0311-44BB-BDE0-5CBA55051749" # ets
-# BLE_MAC_ADDR =   "C0:48:54:55:9B:70" # Romain's devboard
-BLE_MAC_ADDR = "E2:EF:9C:05:9B:A9"  # dextrEMS boar
+BLE_MAC_ADDR = "E2:EF:9C:05:9B:A9"  # dextrEMS board address, different for all boards
 BLE_IDENTIFIER = "04F380A7-181D-4836-8489-8380BA6B7E92"  # dextrEMS
-
 # characteristic for write (LED in blinky example)
 LED_UUID = "00001525-1212-efde-1523-785feabcd123"
 # characteristic for read (button in blinky example)
@@ -145,7 +139,7 @@ if __name__ == "__main__":
     # start OSC server in a thread to prevent conflicting with BLE
     server = osc_server.ThreadingOSCUDPServer((OSC_IP, OSC_PORT), dispatcher)
     server_thread = threading.Thread(target=server.serve_forever)
-    server_thread.daemon = True
+    server_thread.daemon = True # needed for Windows, otherwise can't stop application
     server_thread.start()
     print("open an OSC server at " + OSC_IP + ":" + str(OSC_PORT))
     # server.serve_forever()

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Nith"
+  given-names: "Romain"
+- family-names: "Teng"
+  given-names: "Shan-Yuan"
+- family-names: "Li"
+  given-names: "Pengyu"
+- family-names: "Tao"
+  given-names: "Yujie"
+- family-names: "Lopes"
+  given-names: "Pedro"
+title: "dextrEMS"
+version: 1.0.0
+doi: 10.1145/3472749.3474759
+date-released: 2021-09-26
+url: "https://github.com/humancomputerintegration/dextrEMS"
