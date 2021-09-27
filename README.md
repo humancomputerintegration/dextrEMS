@@ -13,7 +13,7 @@ This is the repository for PCB schematics and 3D printed file used in the wearab
 
 ![hardware_assembly](./images/hardware_assembly.png)
 
-#### 3D Printed
+#### 3D printed
 
 - 1x HandMount_B2
 - 3x Mount_PIP
@@ -22,7 +22,7 @@ This is the repository for PCB schematics and 3D printed file used in the wearab
 - 1x Ratchet_PIP_Pinky
 - 5x Ratchet_MCP_B1
 
-#### Laser Cut (~3mm Acrylic)
+#### laser cut (~3mm acrylic)
 
 - 5x ratchets_n_beams_v2.ai containing:
   - 1x Beam_PIP
@@ -31,7 +31,7 @@ This is the repository for PCB schematics and 3D printed file used in the wearab
   - 1x RatchetBeam_MCP
   - 2x Ratchet
 
-#### Hardware
+#### hardware
 
 - 1x PCB_dextrEMS_v1
 - 8x DC Motors (Vibration Motor 11.6×4.6×4.8mm, Pololu - [link](https://www.pololu.com/product/2265))
@@ -48,7 +48,7 @@ When using or building upon this device in an academic publication, please consi
 
 Romain Nith, Shan-Yuan Teng, Pengyu Li, Yujie Tao, Pedro Lopes. 2021. DextrEMS: Increasing Dexterity in Electrical Muscle Stimulation by Combining it with Brakes. In Proceedings of ACM Symposium on User Interface Software and Technology 2021 (UIST’2021). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3472749.3474759
 
-### contact
+## contact
 
 For any questions about this repository, please contact rnith@uchicago.edu
 
